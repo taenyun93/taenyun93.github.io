@@ -1,0 +1,779 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rishi Shah 
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+\usepackage[T1]{fontenc}
+%\usepackage{CJKutf8}
+%\usepackage[english]{babel}
+% kotex unused: English-language CV
+
+% use your favourite citation style here
+% apacite unused: bibliography uses plain.bst
+
+\usepackage{datetime}
+
+\newdateformat{monthdayyeardate}{%
+  \monthname[\THEMONTH]~\THEDAY, \THEYEAR}
+
+
+
+
+
+% as bibentry and hyperref clash in some cases, this is a workaround
+% as suggested by the following two links:
+%https://tex.stackexchange.com/questions/227933/using-bibentry-to-cite-in-text-reference-with-apacite
+% and
+%https://tex.stackexchange.com/questions/65348/clash-between-bibentry-and-hyperref-with-bibstyle-elsart-harv/65401#65401
+\usepackage{bibentry}
+
+%----------------------------------------------------------------------------------------
+
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+%personal info
+\name{Taenyun Kim} % Your name
+
+%\address{East Lansing, MI 48824, USA} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{(+82)10-7104-9305 \\ taenyun1@gmail.com \\ https://www.taenyunkim.com}
+
+
+
+
+
+
+\begin{document}
+%\begin{CJK}{UTF8}{mj}
+
+
+%----------------------------------------------------------------------------------------
+%	Profile SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{center}
+
+
+\href{https://scholar.google.com/citations?user=Z7eBaGgAAAAJ&hl=en}{[ \textbf{h-index:} 10 | \textbf{i10-index:} 10 | \textbf{Citations:} 698]}
+
+
+\end{center}
+%----------------
+
+%----------------------------------------------------------------------------------------
+%	Research Interests
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Research Interests}
+Human–AI Communication; AI Ethics \& Governance; Moral Judgment of AI; Trust Calibration and Repair in AI; Trustworthy and Socially Responsible AI
+\end{rSection}
+
+
+\begin{rSection}{Featured Papers}
+% bibliography
+\nobibliography{publications.bib}
+\bibliographystyle{plain}	
+\begin{itemize}
+\item \bibentry{kim2026VI} %(\textbf{IF:} 4.9 | \textbf{Citation:} 0) 
+\begin{itemize}
+\item Using mind perception and the theory of dyadic morality, this study shows that although virtual influencers are seen as having lower moral agency than human influencers, they are attributed comparable blame after a scandal and can sometimes repair trust more effectively through apology.
+\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item \bibentry{kim2025we} 
+\begin{itemize}
+\item This study examines public acceptance of AI versus human judges across moral foundations and finds that AI judges are generally seen as riskier and less acceptable, while receiving relatively greater approval in fairness-related cases. It also shows that racial/ethnic minorities show greater social approval of AI than the majority group.
+\end{itemize}
+
+\item \bibentry{Kim2025-cb}
+\begin{itemize}
+\item This study shows that a single anthropomorphic cue can increase trust in an automated vehicle agent, whereas combining multiple cues can trigger an ``uncanny valley of mind,'' reducing trust, perceived usefulness, and intention to use.
+\end{itemize}
+
+%   \item \bibentry{kim2023believe} %\href{https://doi.org/10.1007/s12369-022-00951-5}{[link]}
+%\begin{itemize}
+%\item Tested how users’ implicit theories of AI (entity vs. incremental) interact with apology attribution (internal vs. external) after a stock-recommendation error. Incremental theorists regained trust most when the agent accepted internal attributions, whereas entity theorists responded better to external attributions.
+%\end{itemize}
+  \item \bibentry{kim2023one} 
+  \begin{itemize}
+\item This study identifies two core dimensions of AI perception---human involvement and AI autonomy---and four AI role clusters, showing that laypeople evaluate AI roles differently rather than treating AI as a single undifferentiated category.
+
+\end{itemize}
+
+ \item \bibentry{Kim2021How} %\href{https://doi.org/10.1016/j.tele.2021.101595}{[link]}
+\begin{itemize}
+\item This study shows that effective trust repair depends on the match between an agent's anthropomorphic cue and the type of apology attribution offered after an error.
+\end{itemize}
+\end{itemize}
+
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\newpage
+\begin{rSection}{Education}
+
+{\bf Michigan State University, MI, USA} \hfill {\em August 2022 - August 2026}
+\\ Ph.D. in Information and Media Program \hfill { GPA: 4.0/4.0 }
+\\(Cognitive Science Specialization)
+\\ - Advisor: \href{https://scholar.google.com/citations?user=OntC7VQAAAAJ&hl=en}{Dr. David R. Ewoldsen}
+\\ - Dissertation: Rethinking Moral Norms in the Age of Artificial Intelligence: Mouse-Tracking Evidence of Attenuated Moral Expectations and Greater Hesitation in Judgments of Artificial Agents’ Virtuous Behavior
+
+{\bf Sungkyunkwan University (SKKU), Seoul, South Korea} \hfill {\em September 2019 - August 2021}
+%\\ {\em \small Ranked 97th in QS World University Rankings 2022}
+\\ M.Sc. in Interaction Science (Human-AI Interaction Major) \hfill { GPA: 4.5/4.5 }
+\\ - Advisor: \href{https://scholar.google.com/citations?hl=ko&user=BO-AgNYAAAAJ}{Dr. Hayeon Song}
+\\ - Thesis: The Effect of Anthropomorphism, Implicit Theory, and Apology Attribution on the Trust Repair of Artificial Intelligent Agent
+
+
+{\bf Sungkyunkwan University (SKKU), Seoul, South Korea} \hfill {\em March 2012 - August 2019} 
+%\\ {\em \small Ranked 97th in QS World University Rankings 2022}
+\\ B.A. in Psychology \hfill { GPA: 3.99/4.5 }
+\\ B.S. in Interdisciplinary Informatics
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Coursework
+%----------------------------------------------------------------------------------------
+
+
+
+%----------------------------------------------------------------------------------------
+%	Honors & Awards
+%----------------------------------------------------------------------------------------
+%\newpage
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	Research Experience
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Research Experience}
+
+{\bf Postdoctoral Researcher}\hfill {\em October 2026 - September 2027} 
+\\ \href{https://is.mpg.de/en}{Max Planck Institute for Intelligent Systems}, Stuttgart, Germany  
+
+{\bf Research Assistant}\hfill {\em September 2022 - August 2026} 
+\\ \href{https://www.scamp-lab.com/}{SCAMP Lab}, Michigan State University, USA  
+
+
+{\bf Research Assistant}\hfill {\em September 2023 - August 2026} 
+\\ MLG Lab, Michigan State University, USA
+\\ - Lab Coordinator (April 2025 - Present)
+
+
+
+{\bf Summer Research Intern}\hfill {\em June 2025 - August 2025} 
+\\ \href{https://social-dynamics.net/projects.html}{The Social and Responsible AI Team}, \href{https://www.bell-labs.com/about/locations/cambridge-uk/#gref}{Nokia Bell Labs}, Cambridge, UK
+\\ - Advisor: \href{https://researchswinger.org/}{Dr. Daniele Quercia}; \href{https://www.nokia.com/people/edyta-bogucka/}{Dr. Edyta Bogucka}
+\\  - Selected as 1 of 5 candidates from a competitive pool of 187 applicants (acceptance rate: 2.7\%)
+
+{\bf Research Assistant}\hfill {\em September 2023 - January 2025}
+\\ \href{https://nomcomm.github.io/}{NOMLab}, Michigan State University, USA  
+
+{\bf Research Assistant}\hfill {\em September 2022 - December 2023} 
+\\ \href{https://www.spartie.org/}{SPARTIE Lab}, Michigan State University, USA 
+
+{\bf Researcher}\hfill {\em September 2021 - August 2022} 
+\\ Interaction Science Research Center, SKKU, South Korea
+
+{\bf Research Assistant}\hfill {\em September 2019 - August 2021} 
+\\ \href{https://sites.google.com/view/hailabskku}{HAI-Lab} (P.I.: \href{https://scholar.google.com/citations?hl=ko&user=BO-AgNYAAAAJ}{Dr. Hayeon Song}),
+Department of Interaction Science, SKKU, South Korea
+
+{\bf Member} \hfill {\em August 2017 - August 2019} 
+\\  Explorers in Social Psychology (ESP), Undergraduate Students' Social Psychology Academic Society (Advisor: Dr. Hoon-seok Choi), Department of Psychology, SKKU, South Korea
+
+{\bf Undergraduate Research Assistant} \hfill {\em August 2017 - November 2018} 
+\\ \href{https://cocoanlab.github.io/}{COCOAN LAB} (P.I.: \href{https://cocoanlab.github.io/pdfs/CV_Woo_April2019.pdf}{Dr. Chung-wan Woo}), CNIR (Center for Neuroscience Imaging Research) at SKKU, South Korea
+
+
+
+%Minor in Linguistics \smallskip \\
+
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Mentorship Experience
+%----------------------------------------------------------------------
+
+\begin{rSection}{Mentorship Experience}
+
+{\bf Undergraduate Research Mentor}
+
+\textit{\textbf{V Kumar}}, Michigan State University, USA \hfill {\em April 2025 - March 2026}
+\\ \textit{De-anthropomorphization of AI for Adequate Trust Calibration}
+
+%\textit{\textbf{Kylee May Sokacz}}, Michigan State University, USA \hfill {\em April 2025 - Present}
+%\\ \textit{Trust in AI}
+
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	Teaching Experience
+%----------------------------------------------------------------------------------------AAI3017_01
+
+\begin{rSection}{Teaching Experience}
+
+{\bf Instructor}
+\\\textit{\textbf{Department of Media and Information, Michigan State University}}\hfill {\em Summer 2026} 
+
+[MI355] Media and Information Research
+
+
+ 
+{\bf Co-Instructor}
+
+\textbf{\textit{Department of Interaction Science, SKKU}}\hfill {\em Spring 2020 - Spring 2021} 
+ 
+[HAI5012]
+Research Methods and Intro to Statistics, Spring 2021. \\\textit{Taught students how to use R in data analysis}
+ 
+[WIS5073]
+Introduction to Research Methods, Spring 2020. \\\textit{Taught students how to use R in data analysis}
+
+
+{\bf Guest Lecturer}
+
+\textit{\textbf{Department of Media and Information, Michigan State University}}
+
+[MI201] Introduction to Information Science\\
+\textit{AI \& Future Challenges}, Spring 2026 
+ \\
+ 
+[MI101] Understanding Media and Information\\
+\textit{History of Computer and New Social Agent} \href{https://drive.google.com/file/d/1spLfBQPSvXs74WWsKP1-uReVCRKhXnSQ/view?usp=drive_link}{[PPT]}, Spring 2025 
+ \\
+\textit{Social Media and Online Communication} \href{https://drive.google.com/file/d/1hnVzjzuJnGF6YDkSskQdkxj0ivl6CKjR/view?usp=drive_link}{[PPT]}, Spring 2025 \\
+\textit{What is artificial intelligence?} \href{https://drive.google.com/file/d/1imtNCggrwK3l1UMPF9c5hOjqeHfOuXcs/view?usp=drive_link}{[PPT]}, Spring 2023 
+
+[MI480]  Information and Communication Technologies and Development\\
+\textit{Technology’s Role in Development} \href{https://drive.google.com/file/d/10BwKU8gbYhxP3ylJTA5A8C8PD0IBLoOn/view?usp=drive_link}{[PPT]}, Fall 2024 \\
+
+{\bf Teaching Assistant}
+\\\textit{\textbf{Department of Media and Information, Michigan State University}}\hfill {\em Fall 2022 - August 2026} 
+
+[M201] Introduction to Information Science, Spring 2026\\ 
+\textit{Gave a guest lecture about AI and the future, as well as supported the instructor for the course with 100+ students and mentored students}
+
+[MI480]  Information and Communication Technologies and Development,  Fall 2024
+\textit{Designed and led interactive, design thinking-based activities, including persona development, guided students in tackling project challenges, and provided grading and feedback to enhance learning in ICT4D contexts.}
+
+[MI355] Media and Information Research, Fall 2024; Fall 2025\\ \textit{Supported instructor and mentored students}
+
+[MI101] Understanding Media and Information, Fall 2022; Spring 2023; Spring 2024; Spring 2025\\ 
+\textit{Gave multiple guest lectures about AI and new media as well as supported instructor for the course with 200+ students and mentored students}
+
+[MI302] Networks, Markets and Society, Fall 2023\\ \textit{Supported instructor and mentored students}
+
+[MI305] Media and Information Policy, Fall 2023\\ \textit{Supported instructor and mentored students}
+
+
+\textbf{\textit{Department of Interaction Science, SKKU}}\hfill {\em Spring 2020 - Spring 2021} 
+ 
+[HAI5012]
+Research Methods and Intro to Statistics, Spring 2021. \\\textit{Taught students how to use R in data analysis}
+
+
+[AAI3017]
+Human-Artificial Intelligence Interaction, Fall 2020.\\ \textit{Supported instructor and mentored students}
+
+
+[CHS7003]
+Artificial Intelligence Application, Summer 2020.\\ \textit{Helped students to code basic AI application using Python.}
+
+ 
+[WIS5073]
+Introduction to Research Methods, Spring 2020. \\\textit{Taught students how to use R in data analysis}
+
+
+
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+
+\end{rSection}
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	Research Projects
+%----------------------------------------------------------------------------------------
+%\newpage
+%\begin{rSection}{Research Projects}
+%
+%{\bf Deep Adversarial Learning Driven Virtual Edge: Self-supervised\\ virtual edge mobility, resource placement and allocation}\hfill {\em September 2020 - October 2020}\\
+%Supported by Ministry of Science and ICT-Institute of Information \& Communications Techology Planning \& Evaluation.\\
+%(Chief of Research: Hyunseung Choo)
+%
+%{\bf Towards Super Sapiens: Superintelligent \\for Future Human Innovations}\hfill {\em September 2020 - October 2020} \\ 
+%Supported by Ministry of Science and ICT-Institute of Information \& Communications Techology Planning \& Evaluation.\\
+%(Chief of Research: Hyunseung Choo)
+%
+%{\bf Next Generation Intelligent and High Assurance \\System/Software Research}\hfill {\em September 2020 - October 2020} \\ 
+%Supported by Ministry of Science and ICT-Institute of Information \& Communications Techology Planning \& Evaluation. \\
+%(Chief of Research: Hyunseung Choo)
+%
+%
+%{\bf Interaction Science for Developing Global Human-\\Informatics leaders focusing on UI/UX}\hfill {\em September 2019 - August 2020} \\ 
+%Supported by Ministry of Education-National Research Foundation of Korea.\\
+%(Chief of Research: Janghyun Kim)
+%
+%
+%{\bf Image marketing strategies using SNS service: Deep learning\\ based big data analysis}\hfill {\em July 2019 - June 2020} \\ 
+%Supported by Ministry of Education-National Research Foundation of Korea.\\
+%(Chief of Research: Hayeon Song)
+%
+%{\bf Integrated Research of Basic Neuroscience and Biophysics }\hfill {\em March 2020 - July 2020} \\ 
+%Supported by Ministry of Science and ICT-Institute for Basic Science(IBS).\\(Chief of Research: Seonggi Kim)
+%
+%\end{rSection}
+%\begin{rSection}{Presentation}
+%{\bf AI SKKU Colloquium} \hfill {\em November 2021} 
+%\\Department of Artificial Intelligence, Sungkyunkwan University
+%\end{rSection}
+%----------------------------------------------------------------------------------------
+%	Publications
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Publications}
+    
+\underline{{\bf\Large Peer-Reviewed Journal Publications}}
+
+{\bf\large 2026}
+\begin{itemize}
+\item \bibentry{kim2026VI} %(\textbf{IF:} 4.9 | \textbf{Citation:} 0) 
+\end{itemize}
+
+{\bf\large 2025}
+\begin{itemize}
+\item \bibentry{Yoon26122025} %(\textbf{IF:} 4.9 | \textbf{Citation:} 0) 
+\item \bibentry{kim2025we} %(\textbf{IF:} 4.7 | \textbf{Citation:} 12)
+\item \bibentry{lee2025bringing} %(\textbf{IF:} 5.4 | \textbf{Citation:} 0) 
+\item \bibentry{ratan2025casa}  %(\textbf{IF:} 2.4 | \textbf{Citation:} 0)
+\item \bibentry{Kim2025-cb} %(\textbf{IF:} 4.9 | \textbf{Citation:} 3) 
+\end{itemize}
+
+
+{\bf\large 2024}
+\begin{itemize}
+    \item \bibentry{vaidis2024multilab} %(\textbf{IF:} 13.4 | \textbf{Citation:} 39) 
+
+    
+
+\end{itemize}
+
+{\bf\large 2023}
+\begin{itemize}
+    
+ 
+    \item \bibentry{kim2023communicating} %(\textbf{IF:} 4.9 | \textbf{Citation:} 55)
+    %\href{https://doi.org/10.1080/10447318.2022.2049134}{[link]}
+    \item \bibentry{kim2023believe} %(\textbf{IF:} 3.7 | \textbf{Citation:} 23)
+
+    %\href{https://doi.org/10.1007/s12369-022-00951-5}{[link]}
+\end{itemize}
+{\bf\large 2022}
+\begin{itemize}
+
+  \item \bibentry{kang2022experiencing}% (\textbf{IF:} 4.2 | \textbf{Citation:} 5)
+
+\end{itemize}
+
+{\bf\large 2021}
+\begin{itemize}
+  
+  \item \bibentry{Kim2021How} %(\textbf{IF:} 8.3 | \textbf{Citation:} 121) %\href{https://doi.org/10.1016/j.tele.2021.101595}{[link]}
+  \item \bibentry{song2021VR} % (\textbf{IF:} 11.5 | \textbf{Citation:} 113) %\href{https://doi.org/10.1016/j.autcon.2020.103506}{[link]}
+\end{itemize}
+
+
+
+\bigskip
+\underline{{\bf\Large Book Chapters}}
+
+
+{\bf\large 2023}
+
+\begin{itemize}
+      \item \bibentry{kim2023human} %(\textbf{IF:} NA | \textbf{Citation:} 3) 
+\end{itemize}
+{\bf\large 2020}
+
+\begin{itemize}
+  \item \bibentry{Song2020Artificial}% (\textbf{IF:} NA | \textbf{Citation:} 9) %\href{https://doi.org/10.22174/jcr.2020.57.3.196}{[link]}  
+ \end{itemize}
+
+\bigskip
+\underline{{\bf\Large Proceedings}}
+
+{\bf\large 2026}
+\begin{itemize}
+
+\item \bibentry{kim2026participatory}
+
+\item \bibentry{ling2026cape}% (\textbf{IF:} NA | \textbf{Citation:} 1)
+
+\item \bibentry{won2026accuracy}% (\textbf{IF:} NA | \textbf{Citation:} 1)
+
+\end{itemize}
+
+
+{\bf\large 2025}
+\begin{itemize}
+
+\item \bibentry{Lee2025GenAI}% (\textbf{IF:} NA | \textbf{Citation:} 1)
+
+\end{itemize}
+
+{\bf\large 2024}
+\begin{itemize}
+    \item \bibentry{jang2024your}% (\textbf{IF:} NA | \textbf{Citation:} 4) 
+
+    
+
+\end{itemize}
+
+{\bf\large 2023}
+\begin{itemize}
+    
+
+    \item \bibentry{kim2023one}%  (\textbf{IF:} NA | \textbf{Citation:} 71) 
+ \end{itemize}
+
+{\bf\large 2020}
+\begin{itemize}
+\item \bibentry{kim2020effect}% (\textbf{IF:} NA | \textbf{Citation:} 20) %\href{https://doi.org/10.1145/3334480.3383038}{[link]}
+
+
+
+\end{itemize}
+
+
+
+\bigskip
+\underline{{\bf\Large Conferences Without Published Proceedings}}
+
+{\bf\large 2026}
+\begin{itemize}
+
+ \item \bibentry{kim2026machines}
+
+   \end{itemize}
+   
+
+
+{\bf\large 2025}
+\begin{itemize}
+
+ \item \bibentry{kimXXmoderating}
+ \item \bibentry{zhan2025aiapology}
+ \item \bibentry{ling2025empathychatbot}
+   \end{itemize}
+
+   
+{\bf\large 2024}
+
+\begin{itemize}
+ \item \bibentry{ratan2024technologies}
+ \item \bibentry{pandita2024mamm}
+ \item \bibentry{kim2024implicit}
+ \item \bibentry{kim2024aijudges}
+\item \bibentry{kim2024antihero}
+
+   \end{itemize}
+   
+{\bf\large 2023}
+
+\begin{itemize}
+ \item \bibentry{Kim99VI}
+
+  
+   \end{itemize}
+
+
+{\bf\large 2022}
+\begin{itemize}
+ \item \bibentry{Kim99TAAVA}
+\end{itemize}
+
+{\bf\large 2020}
+\begin{itemize}
+ \item \bibentry{Kim2020Suggestion} %\href{http://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10402831}{[link]}
+\end{itemize}
+
+{\bf\large 2019}
+\begin{itemize}
+\item \bibentry{Seo2019Confronation} %\href{http://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE09222313}{[link]}
+\end{itemize}
+
+\end{rSection}
+% optional: split into different subsections for
+% peer-reviewed articles, conference abstracts, ...
+
+% example with links
+%\publication{Geirhos2017}
+%(\href{https://arxiv.org/abs/1706.06969}{link}, \href{https://arxiv.org/pdf/1706.06969.pdf}{pdf}, %\href{https://github.com/rgeirhos/object-recognition}{data and materials})
+% example without links
+
+	
+	% the cumbersome way
+%	\hangpara{1.5em}{1}Knuth, D. E. (1998). 
+%	\textit{The art of computer programming: sorting and searching} (Vol. 3). Pearson Education.
+\
+
+\begin{rSection}{Honors \& Awards}
+
+
+{\bf PhD Student Educator Award}\hfill {\em April 2026} 
+\\ Awarded by the Department of Media and Information, MSU.
+
+{\bf ICA 2026 ``Rock Star'' Reviewer Award}\hfill {\em January 2026} 
+Designated as the single top reviewer for the Human-Machine Communication interest group---one of only 34 reviewers selected association-wide---for exceptional quality and volume of peer reviews for the 76th Annual ICA Conference.
+
+
+
+{\bf Outstanding Doctoral Student Savant Award}\hfill {\em April 2025} 
+\\ Awarded by the Department of Media and Information, MSU.
+
+
+{\bf Outstanding Doctoral Student Researcher Award}\hfill {\em April 2024} 
+\\ Awarded by the Department of Media and Information, MSU.
+
+{\bf 1st Prize in Outstanding Research Award}\hfill {\em August 2021} 
+\\ Awarded by the Department of Interaction Science, SKKU.
+
+{\bf 1st Prize in Undergraduate Research Presentation Contest}\hfill {\em November 2018} 
+\\ Awarded by the Department of Psychology, SKKU.
+\\ Research Title: “The Effect of Modifiability and Argument Quality in a Confrontation Message on Gender-Stereotypic Responses”
+%대응 메시지 속 수정가능성 제시 여부와 논거의 질이 성 고정관념적 반응의 감소에 미치는 영향 
+
+
+{\bf 2nd Prize in Undergraduate Research Presentation Contest}\hfill {\em November 2017} 
+\\ Awarded by the SKKU, Department of Psychology.
+\\ Research Title: “The Effect of Image in the Credibility of Posts on Social Media”
+%SNS의 신뢰도에 사진이 미치는 영향 
+\end{rSection}
+
+\begin{rSection}{Scholarship}
+
+{\bf Graduate School Dissertation Completion Fellowship (\$4,710.00)}\hfill {\em Spring 2026}
+\\ Granted by the Graduate School, MSU.
+\\ Dissertation Title: ``Comparing Moral Norm Judgments of Human and Artificial Agents: A Mouse-Tracking Study of Response Time, Trajectory Deviation, and Conflict''
+
+{\bf Information and Media Summer Research Fellowship (\$2,684.89)}\hfill {\em Summer 2025}
+\\ Granted by the Department of Media and Information, MSU.
+\\ Proposal Title: "Explication and Scale Development of Implicit Theory of AI"
+
+{\bf Information and Media Summer Research Fellowship (\$2,500)}\hfill {\em Summer 2024}
+\\ Granted by the Department of Media and Information, MSU.
+\\ Proposal Title: "Testing the Assumptions of Machine Heuristics"
+
+{\bf Larry Estlack Memorial Scholarship, Information Studies and Media (\$1,000)}\hfill {\em April 2024}
+\\ Granted by the Department of Media and Information, MSU.
+
+{\bf Information and Media Summer Research Fellowship (\$3,989.90)}\hfill {\em Summer 2023}
+\\ Granted by the Department of Media and Information, MSU.
+\\ Proposal Title: "Moral Foundations of AI Judicial Decision-Making"
+
+{\bf Thomas A. Muth, Sr. Endowed Fund in Telecommunication, Information Studies and Media (\$500)}\hfill {\em April 2023}
+\\ Granted by the Department of Media and Information, MSU.
+
+
+{\bf SKKU Research Matters 2021 Scholarship}\hfill {\em November 2021}
+\\ Granted by the SKKU. \\Conferred to the winners of SKKU Research Matters 2021, a competitive research presentation contest.
+\\ Research Title: “How Should Intelligent Agent Apologize to Repair Trust?”
+
+
+{\bf Brain Korea 21 Scholarship}\hfill {\em August 2019 - August 2021} \\ Research Scholarship (10Z20130000013) granted by Ministry of Education(MOE, Korea) and National Research Foundation of Korea (NRF).\\Interaction Science for Developing Global Human-Informatics leaders focusing on UI/UX
+
+{\bf Graduate Merit Scholarship}\hfill {\em Fall 2019 - Spring 2021} 
+\\ Granted by the Department of Interaction Science, SKKU.
+
+{\bf SimSan Scholarship}\hfill {\em Spring 2020 - Spring 2021} 
+\\ Granted by the Department of Interaction Science, SKKU.
+
+{\bf Student Success Scholarship}\hfill {\em Spring 2019} 
+\\ Granted by the SKKU.
+
+{\bf Academic Excellence Scholarship} \hfill {\em Fall 2018} 
+\\ Granted by Department of Psychology, SKKU for outstanding academic achievement. (GPA 4.5/4.5)
+
+{\bf Academic Excellence Scholarship} \hfill {\em Spring 2013} 
+\\ Granted by Department of Psychology, SKKU for outstanding academic achievement. (GPA 4.38/4.5)
+
+
+
+
+
+\end{rSection}
+
+
+\begin{rSection}{Community Services}
+
+{\bf Vice President}\hfill {\em October 2024 - Present} 
+\\ Association for Doctoral Students in Information and Media
+
+{\bf President}\hfill {\em September 2024 - August 2025} 
+\\ Association for Korean Graduate Students in Communication Arts and Sciences
+
+{\bf Student Representative}\hfill {\em October 2023 - September 2024} 
+\\ Department of Media and Information, Association for Doctoral Students in Information and Media
+
+\end{rSection}
+%\newpage
+
+
+%\newpage
+\begin{rSection}{Academic Service}
+{\bf Reviewed for:} 
+
+
+% --- Communication ---
+\begin{itemize}
+ \item Journal of Communication
+  \item New Media \& Society
+  \item Health Communication
+  \item Behaviour \& Information Technology
+\item AI \& Society
+\item AI \& Ethics
+  \item Cyberpsychology, Behavior, and Social Networking
+  \item BMC Psychology
+  \item Scientific Reports
+  \item Information Processing and Management
+  \item The Annual International Communication Association Conference (ICA)
+  \item ACM Conference on Human Factors in Computing Systems (CHI)
+  \item ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW)
+\end{itemize}
+
+% --- Grant Review Invitations ---
+%\textbf{\textit{Grant Review Invitations}}
+%\begin{itemize}
+%  \item \textbf{Czech Science Foundation (GAČR)} – Invited as an expert reviewer by the Czech Republic’s main public funding agency for basic research. This invitation reflects international recognition of expertise in human–AI interaction and communication science.
+%\end{itemize}
+
+%\newpage
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	SKills
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+
+{\bf Data Analysis \& Programming}
+\begin{itemize}
+\item {\bf Python: } pandas, matplotlib, sklearn, statsmodels, psychopy, keras, gensim, pyqt, opencv
+\item {\bf R: } dplyr, ggplot2, psych, laavan, car, e1071, PROCESS macro for R
+\item {\bf Matlab}
+
+\end{itemize}
+{\bf Software \& Tools: } MS Office, Latex, Github, PsychoPy
+%\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+%Data Analysis \& Programming \ & Python, R, MATLAB \\
+%Software \& Tools  \ & MS Office, Latex, Psychopy \\
+%\end{tabular}
+
+\end{rSection}
+
+%--------------------------------------------------------------------------------
+%    Projects And Seminars
+%-----------------------------------------------------------------------------------------------
+%\begin{rSection}{Projects}
+%{\bf Dynamic Analysis of Buckling Restrained Braces}
+%\\The project aims at designing and fabrication of two Buckling Restrained Braces which were analyzed under dynamic loading. As alternative for conventional braces, these BRBs are also beneficial for seismic retro-fitting in RCC and steel structures.\\
+%\\{\bf Indirect Model Analysis of Structures}\\
+%Presented a Seminar on Indirect Model Analysis, explaining the method to compute response of Prototype from the Influence lines obtained from Model. Use of Muller Breslau Principle in Indirect Model Analysis and the Similitude between prototype and  model.\\
+
+%\\{\bf Microtunneling}\\
+%Presented a seminar on Micro Tunneling, explaining its advantages over conventional method of drainage laying systems. %Analysis considering direct and indirect cost of micro tunneling was also discussed.
+
+%\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Work Experience}
+
+%\begin{rSubsection}{SJ Contracts, Pune}{June 2016}{Site Engineer}{}
+%\item On-site internship under this leading construction company. Learned and implemented various aspects such as quantity estimation, labour management and safety precautions.
+%\end{rSubsection}
+
+
+%\end{rSection}
+
+
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Academic Achievements} 
+% Runners up in B.G.Shirke Vidyarthi Competition for Innovative Project organized by Pune Construction Engineering Research Foundation in January 2018
+%\item Won First Prize in Model Making Competition Organized by Symbiosis Institute of Technology, Pune.
+%\end{rSection}
+
+%\newpage
+
+%----------------------------------------------------------------------------------------
+% Extra Curricular
+%----------------------------------------------------------------------------------------
+%\begin{rSection}{Extra-Cirrucular} \itemsep -3pt
+%\item Co-Organized “ Nirmitee 2017” - a National Symposium of Civil Department of MIT, Pune
+%\item Attended a workshop on Autodesk Revit at IIT Bombay in 2014.
+%\item Winner of Inter Departmental Football Competition 2015.
+%\item Member of the  Rotaract Club Of Pune Pride from 2014 to 2017.
+%\item Worked for a start-up company Named OUST as a Regional Marketing Manager
+%\item Trained and disciplined in National Cadet Corps (NCC), IIT Kanpur for a year.
+ %\item  Participated in Vijyoshi Camp 2012 organized at Indian Institute of Science, Bangalore.
+ %\item Won 2nd position in Kho-Kho in Intramurals conducted by Physical Education Section, IIT Kanpur.
+ %\item Pursued French as second language during secondary school from Grade 6 to Grade 10. Also participated in French Song Competition and French G.K. Quiz in Class 10th. %
+
+%end{rSection}
+
+%\begin{rSection}{Personal Traits}
+%\item Highly motivated and eager to learn new things.
+%\item Strong motivational and leadership skills.
+%\item Ability to work as an individual as well as in group.
+%\end{rSection}
+
+\hfill{\textit{
+Last Updated: \monthdayyeardate\today
+}}
+%\end{CJK}
+\end{document}
