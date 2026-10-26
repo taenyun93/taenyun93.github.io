@@ -18,6 +18,6 @@ The site supports both user and project Pages URLs through relative asset paths.
 
 Content and links: `index.html`. Colors, typography, and mobile layouts: `style.css`.
 
-The research questions are editorial summaries of the existing site's interests. Publications link to Google Scholar; no unverified paper list or citation counts are included. CV links to the original site's Google Drive file.
+The site uses a compact academic layout with a researcher sidebar, research interests, selected publications with DOI links, and education. Publication metadata was checked against publisher pages and bibliographic records; Google Scholar links to the full list. CV links to the original site's Google Drive file.
 
 The existing taenyunkim.com domain has not been moved. To migrate it, first verify the GitHub Pages site, then configure the custom domain and DNS separately.
