@@ -6,6 +6,8 @@
   const count = section.querySelector('#publication-count');
   const empty = section.querySelector('#publication-empty');
   const selected = new Set();
+  const selectedYears = new Set();
+  const yearButtons = [];
   const topics = [...new Set(rows.flatMap(row => JSON.parse(row.dataset.topics)))].sort();
   controls.replaceChildren();
   const fieldset = document.createElement('fieldset');
@@ -42,6 +44,33 @@
   const originalList = section.querySelector('.publication-list');
   const groups = [];
   const years = [...new Set(rows.map(row => row.dataset.year))].sort((a,b) => Number(b)-Number(a));
+  const yearPicker = document.createElement('fieldset');
+  yearPicker.className = 'topic-picker';
+  yearPicker.style.marginBottom = '20px';
+  const yearLegend = document.createElement('legend');
+  yearLegend.textContent = 'Publication years';
+  const yearHint = document.createElement('p');
+  yearHint.className = 'topic-hint';
+  yearHint.textContent = 'Select one or more years, then narrow by research topic.';
+  const yearBubbles = document.createElement('div');
+  yearBubbles.className = 'topic-bubbles';
+  [null, ...years].forEach(value => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'topic-bubble';
+    button.textContent = value === null ? 'All years' : value;
+    button.setAttribute('aria-pressed', String(value === null));
+    button.addEventListener('click', () => {
+      if (value === null) selectedYears.clear();
+      else if (selectedYears.has(value)) selectedYears.delete(value);
+      else selectedYears.add(value);
+      filter();
+    });
+    yearBubbles.append(button);
+    yearButtons.push({button, value});
+  });
+  yearPicker.append(yearLegend, yearHint, yearBubbles);
+  controls.prepend(yearPicker);
   for (const year of years) {
     const details = document.createElement('details');
     details.className = 'publication-year-group';
@@ -64,7 +93,8 @@
   function filter() {
     let visible = 0;
     rows.forEach(row => {
-      const matches = !selected.size || JSON.parse(row.dataset.topics).some(topic => selected.has(topic));
+      const matches = (!selectedYears.size || selectedYears.has(row.dataset.year)) &&
+        (!selected.size || JSON.parse(row.dataset.topics).some(topic => selected.has(topic)));
       row.hidden = !matches;
       if (matches) visible++;
     });
@@ -74,6 +104,7 @@
       badge.textContent = n + (n === 1 ? ' publication' : ' publications');
     });
     buttons.forEach(({button,value}) => button.setAttribute('aria-pressed', String(value === null ? selected.size === 0 : selected.has(value))));
+    yearButtons.forEach(({button,value}) => button.setAttribute('aria-pressed', String(value === null ? selectedYears.size === 0 : selectedYears.has(value))));
     count.textContent = 'Showing ' + visible + ' of ' + rows.length + ' publications';
     empty.hidden = visible !== 0;
   }
